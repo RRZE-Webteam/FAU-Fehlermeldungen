@@ -1,0 +1,62 @@
+{
+  "name": "FAU Fehlermeldungen",
+  "textdomain": "fau-fehlermeldungen",
+  "version": "1.0.1",
+  "keywords": [
+    "WordPress",
+    "Plugin",
+    "FAU",
+    "RRZE"
+  ],
+  "compatibility": {
+    "wprequires": "5.0",
+    "wptestedup": "5.8",
+    "phprequires": "7.4"
+  },
+  "author": {
+    "name": "RRZE-Webteam <webmaster@fau.de> (https://www.rrze.fau.de)",
+    "url": "https://www.wordpress.rrze.fau.de"
+  },
+  "description": "Ausgabe von zusätzlichen wissenschaftlich basierten Nebeninformationen zu den Standard Fehlermeldungen 401, 403, 404 und 500 in WordPress-Themes.",
+  "license": "GNU General Public License v3 or later",
+  "licenseurl": "http://www.gnu.org/licenses/gpl-3.0.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RRZE-Webteam/fau-fehlermeldungen",
+    "issues": "https://github.com/RRZE-Webteam/fau-fehlermeldungen/issues",
+    "clone": "git+https://github.com/RRZE-Webteam/fau-fehlermeldungen.git"
+  },
+  "tags": "error, errormessages, FAU",
+  "browserslist": [
+    "last 3 years"
+  ],
+  "contributors": [],
+  "main": "fau-fehlermeldungen.php",
+  "scripts": {
+    "start": "gulp",
+    "dev": "gulp dev",
+    "build": "gulp build",
+    "pot": "gulp pot"
+  },
+  "source": {
+    "sass": "./src/sass/",
+    "cssmain": "fau-fehlermeldungen",
+    "cssadmin": "fau-fehlermeldungen-admin"
+  },
+  "dest": {
+    "css": "./css/"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-bump": "^3.2.0",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-header": "^2.0.9",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-touch-cmd": "0.0.1",
+    "gulp-wp-pot": "^2.5.0",
+    "sass": "^1.42.1",
+    "semver": "^7.3.4",
+    "yargs": "^16.2.0"
+  }
+}

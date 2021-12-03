@@ -1,0 +1,50 @@
+/***************************************************************************
+/* base
+/ *************************************************************************/
+.fau-fehlermeldung {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;    
+    flex-wrap : wrap;
+    
+    .error {
+	flex: 1 0 40%;
+	min-width: 420px;
+	h2 {
+	    font-size: 3rem;
+	    line-height: 1.5;
+	}
+	.desc {
+	    
+	}
+    }   
+    .error.code404::before {
+	content:' 404';
+	font-family: 'FAU Chimera', Roboto, Arial, sans-serif;
+	position: absolute;
+	font-size: 15rem;
+	line-height: 1.5;
+	opacity: 0.1;
+	font-weight: bold;
+	margin-top: -4.5rem;
+	
+	@media (min-width: 1024px) {
+	    left: 0;
+	    bottom: 0;	    
+	}
+    }
+    .extra {
+	flex: 1 0 40%;
+	min-width: 420px;
+	figure {
+	    margin: 1rem;
+	   
+	    
+	    figcaption {
+		font-size: 0.9rem;
+		text-align: left;
+		line-height: 1.5;
+	    }
+	}
+    }
+}
