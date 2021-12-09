@@ -4,7 +4,7 @@
 Plugin Name:     FAU Fehlermeldungen
 Plugin URI:      https://github.com/RRZE-Webteam/fau-fehlermeldungen
 Description:     Ausgabe von zusätzlichen wissenschaftlich basierten Nebeninformationen zu den Standard Fehlermeldungen 401, 403, 404 und 500 in WordPress-Themes.
-Version:         1.0.4
+Version:         1.0.5
 Author:          RRZE Webteam
 Author URI:      https://blogs.fau.de/webworking/
 License:         GNU General Public License v2
