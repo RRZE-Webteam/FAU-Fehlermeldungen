@@ -1,17 +1,5 @@
-﻿/*!
+/*!
 Plugin Name: FAU Fehlermeldungen
-Version: 1.0.1
-Requires at least: 5.0
-Tested up to: 5.8
-Requires PHP: 7.4
-Description: Ausgabe von zusätzlichen wissenschaftlich basierten Nebeninformationen zu den Standard Fehlermeldungen 401, 403, 404 und 500 in WordPress-Themes.
-Theme URI: https://github.com/RRZE-Webteam/fau-fehlermeldungen
+Version: 1.0.3
 GitHub Plugin URI: https://github.com/RRZE-Webteam/fau-fehlermeldungen
-GitHub Issue URL: https://github.com/RRZE-Webteam/fau-fehlermeldungen/issues
-Author: RRZE-Webteam <webmaster@fau.de> (https://www.rrze.fau.de)
-Author URI: https://www.wordpress.rrze.fau.de
-License: GNU General Public License v3 or later
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Tags: error, errormessages, FAU
-Text Domain: fau-fehlermeldungen
 */.fau-fehlermeldung{display:flex;gap:30px;justify-content:space-between;flex-wrap:wrap}.fau-fehlermeldung .error{flex:1 0 40%;min-width:420px}.fau-fehlermeldung .error h2{font-size:3rem;line-height:1.5}.fau-fehlermeldung .error.code404::before{content:" 404";font-family:"FAU Chimera",Roboto,Arial,sans-serif;position:absolute;font-size:15rem;line-height:1.5;opacity:.1;font-weight:bold;margin-top:-4.5rem}@media(min-width: 1024px){.fau-fehlermeldung .error.code404::before{left:0;bottom:0}}.fau-fehlermeldung .extra{flex:1 0 40%;min-width:420px}.fau-fehlermeldung .extra figure{margin:1rem}.fau-fehlermeldung .extra figure figcaption{font-size:.9rem;text-align:left;line-height:1.5}

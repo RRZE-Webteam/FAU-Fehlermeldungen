@@ -45,12 +45,20 @@ Beispiel:
 [fau_fehlermeldungen type="404"]
 ```
 
+Wenn bei der Ausgabe der Standard-Fehlertext unterdrückt werden soll, kann
+hierzu das Attribut `fulltext="false"` ergänzt werden:
+
+Beispiel:
+```
+[fau_fehlermeldungen type="404" fulltext="false"]
+```
+
 ## Einbau in Themes
 
 In der jeweiligen Fehlerdatei (z.B. der für 404-Fehler) kann folgender Code eingebaut werden:
 
 ```php
-if ( is_plugin_active( 'fau-fehlermeldungen/fau-fehlermeldungen.php' ) ) { 
+if ( is_plugin_active( 'FAU-Fehlermeldungen/fau-fehlermeldungen.php' ) ) { 
 	 <?php echo do_shortcode('[fau_fehlermeldungen type="404"]'); ?>
 } ?>
 

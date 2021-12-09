@@ -33,13 +33,14 @@ class Shortcode {
     public function shortcodeOutput( $atts ) {
         // merge given attributes with default ones
 	$shortcode_attr = shortcode_atts( array(
-	    'type'                   => '500',
+	    'type'      => '500',
+	    'fulltext'	=> true,
 	), $atts );
 
 
 	$errortype = $shortcode_attr['type'];
-	
-	$html = $this->get_errormessage($errortype);
+	$full = $shortcode_attr['fulltext'];
+	$html = $this->get_errormessage($errortype,$full);
 	if (!empty($html)) {
 	    Main::fau_fehlermeldungen_enqueue_style('fau-fehlermeldungen');	   
 	}
@@ -47,7 +48,7 @@ class Shortcode {
 	
 
     }
-    public function get_errormessage($type = 'other', $name = '') {
+    public function get_errormessage($type = 'other', $fulltext = true, $name = '') {
 	$error_templates = Options::getTemplates();
 	
 	
@@ -61,6 +62,12 @@ class Shortcode {
 
 	
 	$this->data->errorcode = $type;
+	if ($fulltext === true) {
+	    $this->data->showdefaulterror = true;
+	} else {
+	     $this->data->showdefaulterror = false;
+	}
+
 	$this->data->errornum = $errornum;
 	$this->data->imgpath = trailingslashit( plugins_url( '', $this->pluginFile ) ); 
 	

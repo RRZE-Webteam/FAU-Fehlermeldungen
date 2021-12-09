@@ -25,19 +25,7 @@ var banner = [
     '/*!',
     'Plugin Name: <%= info.name %>',
     'Version: <%= info.version %>',
-    'Requires at least: <%= info.compatibility.wprequires %>',
-    'Tested up to: <%= info.compatibility.wptestedup %>',
-    'Requires PHP: <%= info.compatibility.phprequires %>',
-    'Description: <%= info.description %>',
-    'Theme URI: <%= info.repository.url %>',
     'GitHub Plugin URI: <%= info.repository.url %>',
-    'GitHub Issue URL: <%= info.repository.issues %>',
-    'Author: <%= info.author.name %>',
-    'Author URI: <%= info.author.url %>',
-    'License: <%= info.license %>',
-    'License URI: <%= info.licenseurl %>',
-    'Tags: <%= info.tags %>',
-    'Text Domain: <%= info.textdomain %>',
     '*/'].join('\n');
 
 

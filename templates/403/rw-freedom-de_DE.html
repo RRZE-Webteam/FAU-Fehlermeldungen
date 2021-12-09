@@ -1,12 +1,13 @@
 <div class="fau-fehlermeldung">
-    <div class="error code{{=errornum}}">
-	
+    {{showdefaulterror}}
+    <div class="error code{{=errornum}}">	
 	<h2>Zugriff verweigert</h2>	
 	
 	<p class="desc">	        
 	    Es tut uns leid, der Zugriff wurde verweigert.
 	</p>
     </div>
+    {{/showdefaulterror}}
     <div class="extra code{{=errornum}}">
 	<p>
 	Trotzdem wurde hier nichts zensiert – an der FAU ist die Wissenschaftsfreiheit oberstes Gebot. Das ist nicht überall auf der Welt so, wie der Academic Freedom Index zeigt. Wir erstellen ihn jedes Jahr in Zusammenarbeit mit dem V-Dem Institut an der Universität Göteborg.  
