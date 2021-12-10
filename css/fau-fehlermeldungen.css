@@ -1,5 +1,5 @@
 /*!
 Plugin Name: FAU Fehlermeldungen
-Version: 1.0.4
+Version: 1.0.5
 GitHub Plugin URI: https://github.com/RRZE-Webteam/fau-fehlermeldungen
 */.fau-fehlermeldung{display:flex;gap:30px;justify-content:space-between;flex-wrap:wrap}.fau-fehlermeldung .error{flex:1 0 40%;min-width:420px}.fau-fehlermeldung .error h2{font-size:3rem;line-height:1.5}.fau-fehlermeldung .error.code404::before{content:" 404";font-family:"FAU Chimera",Roboto,Arial,sans-serif;position:absolute;font-size:15rem;line-height:1.5;opacity:.1;font-weight:bold;margin-top:-4.5rem}@media(min-width: 1024px){.fau-fehlermeldung .error.code404::before{left:0;bottom:0}}.fau-fehlermeldung .extra{flex:1 0 40%;min-width:420px}.fau-fehlermeldung .extra figure{margin:1rem}.fau-fehlermeldung .extra figure figcaption{font-size:.9rem;text-align:left;line-height:1.5}

@@ -57,14 +57,13 @@ class Main {
 
 	$known_themes = Options::getKnownThemes();
 
-//	if (in_array($active_theme, $known_themes['fauthemes'])) {
+	if (in_array($active_theme, $known_themes['fauthemes'])) {
 	    // No CSS for frontend
        // } elseif (in_array($active_theme, $known_themes['rrzethemes'])) {
 	   // No CSS for frontend
-//	} else{
+	} else{
 	    wp_enqueue_style($style);
-//	}
-
+	}
     }
 
     
